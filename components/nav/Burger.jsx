@@ -16,9 +16,8 @@ export const Burger = () => {
             width: 2rem;
             height: 2rem;
             position: fixed;
-            top: 15px;
+            top: 30px;
             right: 20px;
-            
             z-index: 20;
             display: none;
           }
@@ -32,6 +31,7 @@ export const Burger = () => {
           }
 
           .burger1 {
+            width: 2rem;
             transform: ${open ? "rotate(45deg)" : "rotate(0)"};
           }
           .burger2 {
@@ -40,15 +40,15 @@ export const Burger = () => {
             width: 1.5rem;
           }
           .burger3 {
+            width: 2rem;
             transform: ${open ? "rotate(-45deg)" : "rotate(0)"};
           }
 
           @media only screen and (max-width: 780px) {
             .burger-main {
-
-            display: flex;
-            justify-content: space-around;
-            flex-flow: column nowrap;
+              display: flex;
+              justify-content: space-around;
+              flex-flow: column nowrap;
             }
           }
         `}</style>
