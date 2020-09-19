@@ -25,7 +25,7 @@ export const Burger = () => {
           .burger {
             width: 2rem;
             height: 0.25rem;
-            background-color: ${open ? "red" : "blue"};
+            background-color: ${open ? "red" : "black"};
             transform-origin: 1px;
             transition: all 0.3s linear;
           }

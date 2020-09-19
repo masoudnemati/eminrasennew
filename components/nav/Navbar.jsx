@@ -8,8 +8,8 @@ const Navbar = () => {
         <img
           src="/icons/dalitoporlogo.png"
           alt="dali topar"
-          width="65px"
-          height="65px"
+          width="69px"
+          height="69px"
         />
       </div>
       <Burger />
@@ -19,7 +19,7 @@ const Navbar = () => {
           width: 100%;
           height: auto;
           padding: 0 20px;
-          background: rgba(255, 255, 255, 0.95);
+          background-color: rgba(255, 255, 255, 0.95);
           display: flex;
           justify-content: space-between;
           border-bottom: 1px solid black;

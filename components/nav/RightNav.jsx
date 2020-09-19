@@ -77,15 +77,15 @@ export const RightNav = ({ open }) => {
             ul {
               flex-flow: column;
               direction: rtl;
-              background: white;
+              background-color: rgba(255, 255, 255, 0.95);
               position: fixed;
               margin: 0;
               transform: ${open ? "translateX(0)" : "translateX(100%)"};
               top: 0;
               right: 0;
               height: 100vh;
-              width: 75vw;
-              padding-top: 5rem;
+              width: 65vw;
+              padding-top: 6rem;
               transition: transform 0.3s ease-in-out;
             }
           }
