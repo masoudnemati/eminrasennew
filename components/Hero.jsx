@@ -63,6 +63,9 @@ const Hero = () => {
           margin: 0;
           padding-top: 8px;
           padding-bottom: 30px;
+          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+            sans-serif;
 
           color: rgb(187, 187, 187);
         }

@@ -19,14 +19,14 @@ const Navbar = () => {
           width: 100%;
           height: auto;
           padding: 0 20px;
-          background-color: rgba(255, 255, 255, 0.95);
+          background-color: rgba(255, 255, 255, 0.97);
           display: flex;
           justify-content: space-between;
           border-bottom: 1px solid black;
         }
 
         .logo {
-          padding: 10px 0;
+          padding: 8px 0;
         }
       `}</style>
     </div>
