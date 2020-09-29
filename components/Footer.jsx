@@ -53,14 +53,24 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                insta
+                <img
+                  src="/icons/icons8-instagram-old-50.png"
+                  alt="emin rasen instagram"
+                  width="33px"
+                  height="33px"
+                />
               </a>
               <a
                 href="https://t.me/rasenrap1"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                telegram
+                <img
+                  src="/icons/icons8-telegram-app-50.png"
+                  alt="emin rasen instagram"
+                  width="33px"
+                  height="33px"
+                />
               </a>
             </div>
           </li>
@@ -108,49 +118,38 @@ const Footer = () => {
         }
 
         li {
-          padding: 4px 30px 6px 0;
+          padding: 6px 30px 6px 0;
           margin: 0;
         }
         .links {
           padding-bottom: 10px;
           color: skyblue;
-          font-weight: bold;
           font-size: 1.1rem;
           background-image: url("/icons/icons8-link-26.png");
+          background-size: 23px;
           background-repeat: no-repeat;
           background-position: right center;
         }
 
-        .home-li {
-          background-image: url("/icons/icons8-home-24.png");
-          background-repeat: no-repeat;
-          background-position: right center;
-        }
-
-        .songs-li {
-          background-image: url("/icons/icons8-musical-notes-24.png");
-          background-repeat: no-repeat;
-          background-position: right center;
-        }
-
-        .video-li {
-          background-image: url("/icons/icons8-video-call-24.png");
-          background-repeat: no-repeat;
-          background-position: right center;
-        }
-
-        .about-us-li {
-          background-image: url("/icons/icons8-about-24.png");
-          background-repeat: no-repeat;
-          background-position: right center;
-        }
-
+        .home-li,
+        .songs-li,
+        .video-li,
+        .about-us-li,
         .contact-us-li {
-          background-image: url("/icons/icons8-phone-24.png");
+          background-image: url("/icons/icons8-filled-circle-25.png");
+          background-size: 20px;
           background-repeat: no-repeat;
           background-position: right center;
         }
 
+        .home-li:hover,
+        .songs-li:hover,
+        .video-li:hover,
+        .about-us-li:hover,
+        .contact-us-li:hover {
+          color: black;
+          background-color: white;
+        }
         .shabake {
           padding-bottom: 10px;
           color: skyblue;
@@ -161,6 +160,35 @@ const Footer = () => {
 
         .donbal {
           font-size: 0.9rem;
+        }
+
+        img {
+          margin-left: 15px;
+          padding: 5px;
+          background-color: rgba(135, 207, 235, 0.5);
+          border: 1px solid black;
+          border-radius: 10px;
+        }
+
+        img:hover {
+          background-color: black;
+        }
+
+        @media only screen and (max-width: 900px) {
+          footer {
+            display: flex;
+            flex-direction: column;
+          }
+
+          .footer-left,
+          .footer-center,
+          .footer-right {
+            width: 100vw;
+          }
+
+          .footer-left {
+            padding: 5vh 8vw;
+          }
         }
       `}</style>
     </footer>
