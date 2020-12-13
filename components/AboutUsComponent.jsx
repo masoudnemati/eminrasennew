@@ -26,7 +26,7 @@ const AboutUsComponent = () => {
       </div>
       <style jsx>{`
         .aboutus-main {
-          padding: 50px 100px 300px 100px;
+          padding: 170px 100px 300px 100px;
           text-align: right;
           direction: rtl;
           text-align: justify;
@@ -65,7 +65,7 @@ const AboutUsComponent = () => {
         @media (max-width: 760px) {
           .aboutus-main {
             display: block;
-            padding: 5px 0px 10px 0px;
+            padding: 80px 0px 10px 0px;
           }
           .aboutus-main img {
             display: block;

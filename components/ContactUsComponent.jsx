@@ -113,7 +113,7 @@ const ContactUsComponent = () => {
       <style jsx>{`
         .contactus-main {
           background-image: linear-gradient(black, white);
-          padding-top: 60px;
+          padding-top: 170px;
           display: flex;
           flex-direction: row;
           flex-wrap: wrap;

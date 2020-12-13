@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { RightNav } from "./RightNav";
+import RightNav from "./RightNav";
 
-export const Burger = () => {
+const Burger = () => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -25,7 +25,7 @@ export const Burger = () => {
           .burger {
             width: 2rem;
             height: 0.25rem;
-            background-color: ${open ? "red" : "black"};
+            background-color: ${open ? "red" : "gray"};
             transform-origin: 1px;
             transition: all 0.3s linear;
           }
@@ -57,3 +57,5 @@ export const Burger = () => {
     </>
   );
 };
+
+export default Burger;

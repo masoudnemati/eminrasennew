@@ -1,9 +1,9 @@
 import Link from "next/link";
 
-export const RightNav = ({ open }) => {
+const RightNav = ({ open }) => {
   return (
     <div>
-      <ul open={open}>
+      <ul className="nav-ul" open={open}>
         <li className="home-li">
           <Link href="/">
             <a>صفحه اصلی</a>
@@ -74,10 +74,10 @@ export const RightNav = ({ open }) => {
           }
 
           @media only screen and (max-width: 780px) {
-            ul {
+            .nav-ul {
               flex-flow: column;
               direction: rtl;
-              background-color: rgba(255, 255, 255, 0.95);
+              background-color: rgba(156, 156, 156, 0.9);
               position: fixed;
               margin: 0;
               transform: ${open ? "translateX(0)" : "translateX(100%)"};
@@ -88,9 +88,27 @@ export const RightNav = ({ open }) => {
               padding-top: 6rem;
               transition: transform 0.3s ease-in-out;
             }
+
+            /* .nav-white {
+              background-color: white;
+            } */
           }
+
+          /* .ul-scroll {
+            background-color: white;
+          } */
         `}</style>
       </ul>
     </div>
   );
 };
+
+// if (typeof window !== "undefined") {
+//    browser code
+//   window.addEventListener("scroll", function () {
+//     let ul = document.querySelector("ul");
+//     ul.classList.toggle("ul-scroll", window.scrollY > 0);
+//   });
+// }
+
+export default RightNav;
