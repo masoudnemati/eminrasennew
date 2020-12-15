@@ -38,6 +38,13 @@ const Navbar = () => {
         .logo {
           padding: 8px 0;
         }
+
+        img {
+          padding: 0 0 2px 0;
+          background-color: white;
+          border: 1px 0 solid white;
+          border-radius: 5% 50%;
+        }
       `}</style>
     </header>
   );

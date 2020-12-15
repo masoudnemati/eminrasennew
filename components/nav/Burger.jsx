@@ -6,7 +6,7 @@ const Burger = () => {
 
   return (
     <>
-      <main className="burger-main" onClick={() => setOpen(!open)}>
+      <aside className="burger-main" onClick={() => setOpen(!open)}>
         <div className="burger burger1" />
         <div className="burger burger2" />
         <div className="burger burger3" />
@@ -25,7 +25,8 @@ const Burger = () => {
           .burger {
             width: 2rem;
             height: 0.25rem;
-            background-color: ${open ? "red" : "gray"};
+            background-color: ${open ? "red" : "white"};
+            border: 1px solid black;
             transform-origin: 1px;
             transition: all 0.3s linear;
           }
@@ -52,10 +53,18 @@ const Burger = () => {
             }
           }
         `}</style>
-      </main>
+      </aside>
       <RightNav open={open} />
     </>
   );
 };
+
+if (typeof window !== "undefined") {
+  // browser code
+  window.addEventListener("scroll", function () {
+    let burger = document.querySelector("aside");
+    burger.classList.toggle("burger-scroll", window.scrollY > 0);
+  });
+}
 
 export default Burger;
