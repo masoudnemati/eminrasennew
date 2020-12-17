@@ -22,7 +22,7 @@ const Navbar = () => {
           height: 105px;
           margin: 0;
           padding: 0 20px;
-          background-color: #0d1623;
+          background-color: rgba(12, 21, 34, 0.95);
           display: flex;
           justify-content: space-between;
           border-bottom: 1px solid black;
@@ -31,20 +31,22 @@ const Navbar = () => {
 
         .navbar-scroll {
           color: black;
-          background-color: white;
+          background-color: rgba(255, 255, 255, 0.94);
           padding: 0 20px;
           height: 90px;
         }
         .logo {
-          padding: 8px 0;
-        }
-
-        img {
-          padding: 0 0 2px 0;
           background-color: white;
           border: 1px 0 solid white;
-          border-radius: 5% 50%;
+          border-radius: 0 0 40% 40%;
+          padding-top: 7px;
+          margin-bottom: 22px;
+          margin-left: 20px;
         }
+
+        /* img {
+          padding: 0 0 2px 0;
+        } */
       `}</style>
     </header>
   );

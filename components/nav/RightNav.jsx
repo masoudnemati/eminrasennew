@@ -32,6 +32,7 @@ const RightNav = ({ open }) => {
 
         <style jsx>{`
           ul {
+            padding-right: 30px;
             list-style: none;
             display: flex;
             flex-flow: row-reverse nowrap;
@@ -78,7 +79,7 @@ const RightNav = ({ open }) => {
               flex-flow: column;
               direction: rtl;
               color: black;
-              background-color: rgba(255, 255, 255, 0.9);
+              background-color: rgba(255, 255, 255, 0.94);
               position: fixed;
               margin: 0;
               transform: ${open ? "translateX(0)" : "translateX(100%)"};

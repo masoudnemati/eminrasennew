@@ -20,6 +20,7 @@ const Burger = () => {
             right: 20px;
             z-index: 20;
             display: none;
+            margin-right: 10px;
           }
 
           .burger {

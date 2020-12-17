@@ -5,10 +5,19 @@ const Footer = () => {
   return (
     <footer>
       <div className="footer-left">
-        <h1>
-          EMIN<span>RASEN</span>
-        </h1>
-        <p>TURKMEN RAP İÑ DALISI</p>
+        <div>
+          <h1>
+            EMIN<span>RASEN</span>
+          </h1>
+          <p>TURKMEN RAP İÑ DALISI</p>
+        </div>
+        <p className="rights">
+          &copy; 2017-{new Date().getFullYear()} eminrasen.ir
+          <br />
+          Web Design by Atyal.ir
+          <br />
+          All rights reserved.
+        </p>
       </div>
       <div className="footer-center">
         <ul>
@@ -56,8 +65,8 @@ const Footer = () => {
                 <img
                   src="/icons/icons8-instagram-old-50.png"
                   alt="emin rasen instagram"
-                  width="33px"
-                  height="33px"
+                  width="40px"
+                  height="40px"
                 />
               </a>
               <a
@@ -68,8 +77,8 @@ const Footer = () => {
                 <img
                   src="/icons/icons8-telegram-app-50.png"
                   alt="emin rasen instagram"
-                  width="33px"
-                  height="33px"
+                  width="40px"
+                  height="40px"
                 />
               </a>
             </div>
@@ -84,7 +93,7 @@ const Footer = () => {
           align-items: flex-start;
           flex-wrap: wrap;
           align-content: center;
-          padding: 0px 8vw;
+          padding: 0px 4vw;
           color: white;
           background-color: #292c2f;
         }
@@ -95,6 +104,14 @@ const Footer = () => {
           width: 250px;
         }
 
+        .footer-left {
+          height: 268px;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+        }
+
         span {
           color: skyblue;
         }
@@ -102,6 +119,7 @@ const Footer = () => {
         h1 {
           font-family: "Audiowide", cursive;
           padding-bottom: 0;
+          padding-top: 3px;
           margin-bottom: 0;
         }
 
@@ -111,6 +129,10 @@ const Footer = () => {
           color: rgba(255, 255, 255, 0.5);
         }
 
+        .footer-left .rights {
+          color: white;
+          font-size: 13px;
+        }
         ul {
           list-style: none;
           margin-top: 25px;
@@ -147,8 +169,7 @@ const Footer = () => {
         .video-li:hover,
         .about-us-li:hover,
         .contact-us-li:hover {
-          color: black;
-          background-color: white;
+          color: #74aec7;
         }
         .shabake {
           padding-bottom: 10px;
@@ -177,7 +198,7 @@ const Footer = () => {
         @media only screen and (max-width: 900px) {
           footer {
             display: flex;
-            flex-direction: column;
+            flex-direction: column-reverse;
           }
 
           .footer-left,
@@ -188,6 +209,10 @@ const Footer = () => {
 
           .footer-left {
             padding: 5vh 8vw;
+          }
+
+          .footer-right {
+            padding-left: 10px;
           }
         }
       `}</style>
