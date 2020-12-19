@@ -119,7 +119,7 @@ const Footer = () => {
         h1 {
           font-family: "Audiowide", cursive;
           padding-bottom: 0;
-          padding-top: 3px;
+          padding-top: 9px;
           margin-bottom: 0;
         }
 

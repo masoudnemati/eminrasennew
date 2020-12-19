@@ -1,7 +1,8 @@
 import React from "react";
+import Layout from "../components/layout";
 
 const Video = () => {
-  return <div>Video page</div>;
+  return <Layout>video</Layout>;
 };
 
 export default Video;

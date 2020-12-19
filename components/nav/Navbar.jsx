@@ -26,7 +26,7 @@ const Navbar = () => {
           display: flex;
           justify-content: space-between;
           border-bottom: 1px solid black;
-          transition: 0.8s;
+          transition: all 0.5s linear;
         }
 
         .navbar-scroll {
@@ -38,15 +38,11 @@ const Navbar = () => {
         .logo {
           background-color: white;
           border: 1px 0 solid white;
-          border-radius: 0 0 40% 40%;
+          border-radius: 0 0 35% 35%;
           padding-top: 7px;
-          margin-bottom: 22px;
+          margin-bottom: 20px;
           margin-left: 20px;
         }
-
-        /* img {
-          padding: 0 0 2px 0;
-        } */
       `}</style>
     </header>
   );

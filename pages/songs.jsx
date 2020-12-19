@@ -1,7 +1,8 @@
 import React from "react";
+import Layout from "../components/layout";
 
 const Songs = () => {
-  return <div>Songs</div>;
+  return <Layout>Songs</Layout>;
 };
 
 export default Songs;

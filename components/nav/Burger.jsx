@@ -60,12 +60,4 @@ const Burger = () => {
   );
 };
 
-if (typeof window !== "undefined") {
-  // browser code
-  window.addEventListener("scroll", function () {
-    let burger = document.querySelector("aside");
-    burger.classList.toggle("burger-scroll", window.scrollY > 0);
-  });
-}
-
 export default Burger;
