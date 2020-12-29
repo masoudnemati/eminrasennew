@@ -36,7 +36,7 @@ const Navbar = () => {
           height: 90px;
         }
         .logo {
-          background-color: white;
+          background-color: rgba(255, 255, 255);
           border: 1px 0 solid white;
           border-radius: 0 0 35% 35%;
           padding-top: 7px;
