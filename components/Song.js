@@ -1,18 +1,13 @@
-const Song = ({ name, singers, imageUrl }) => {
+const Song = ({ name, singers, imageUrl, songUrl, bgColor, aColor }) => {
   return (
     <>
       <div className="main">
-        <img
-          src="/images/eminrasenhero.webp"
-          width="300"
-          height="300"
-          alt="test"
-        />
+        <img src={imageUrl} width="300" height="300" alt="test" />
         <h3>{name}</h3>
         <p>{singers}</p>
-        <audio src="" controls preload="none" />
+        <audio src={songUrl} controls preload="none" />
         <div className="a">
-          <a href={singers} download={name}>
+          <a href={songUrl} download={name}>
             Download MP3
           </a>
         </div>
@@ -26,7 +21,7 @@ const Song = ({ name, singers, imageUrl }) => {
           border-radius: 0 0 20% 20%;
           width: 350px;
           padding-left: 20px;
-          background-color: #011931;
+          background-color: ${bgColor};
           margin: 15px;
         }
 
@@ -53,14 +48,14 @@ const Song = ({ name, singers, imageUrl }) => {
           padding: 12px;
           padding-left: 35px;
           font-size: 0.9rem;
-          border: 2px solid #000d1a;
+          border: 2px solid ${aColor};
           border-radius: 0 0 25% 25%;
-          margin-bottom: 5px;
+          margin-bottom: 15px;
           background-image: url("/icons/icons8-download-26.png");
           background-repeat: no-repeat;
           background-size: 17px;
           background-position: 10px center;
-          background-color: #011122;
+          background-color: ${aColor};
         }
 
         a:hover {
