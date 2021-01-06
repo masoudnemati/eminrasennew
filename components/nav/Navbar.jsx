@@ -27,6 +27,7 @@ const Navbar = () => {
           justify-content: space-between;
           border-bottom: 1px solid black;
           transition: all 0.5s linear;
+          z-index: 10;
         }
 
         .navbar-scroll {

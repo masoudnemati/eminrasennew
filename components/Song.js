@@ -1,14 +1,17 @@
-const Song = ({ name, singers, imageUrl, songUrl, bgColor, aColor }) => {
+const Song = ({ name, singers, imageUrl, songUrl, bgColor, aColor, size }) => {
   return (
     <>
+      <div className="bg"></div>
       <div className="main">
-        <img src={imageUrl} width="300" height="300" alt="test" />
+        <div className="image">
+          <img src={imageUrl} width="300" height="300" alt={name} />
+        </div>
         <h3>{name}</h3>
         <p>{singers}</p>
         <audio src={songUrl} controls preload="none" />
         <div className="a">
-          <a href={songUrl} download={name}>
-            Download MP3
+          <a href={songUrl} download>
+            <span className="bold">Download</span> (size: {size})
           </a>
         </div>
       </div>
@@ -21,8 +24,19 @@ const Song = ({ name, singers, imageUrl, songUrl, bgColor, aColor }) => {
           border-radius: 0 0 20% 20%;
           width: 350px;
           padding-left: 20px;
-          background-color: ${bgColor};
+          padding-right: 20px;
           margin: 15px;
+          background-color: ${bgColor};
+        }
+
+        .image {
+          text-align: center;
+        }
+
+        img {
+          display: inline-block;
+          padding: 0;
+          margin: 0;
         }
 
         h3 {
@@ -37,6 +51,8 @@ const Song = ({ name, singers, imageUrl, songUrl, bgColor, aColor }) => {
 
         audio {
           justify-content: center;
+          position: relative;
+          z-index: 0;
         }
 
         .a {
@@ -60,6 +76,10 @@ const Song = ({ name, singers, imageUrl, songUrl, bgColor, aColor }) => {
 
         a:hover {
           border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .bold {
+          font-weight: bold;
         }
       `}</style>
     </>
