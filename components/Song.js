@@ -1,7 +1,6 @@
 const Song = ({ name, singers, imageUrl, songUrl, bgColor, aColor, size }) => {
   return (
     <>
-      <div className="bg"></div>
       <div className="main">
         <div className="image">
           <img src={imageUrl} width="300" height="300" alt={name} />
@@ -14,19 +13,40 @@ const Song = ({ name, singers, imageUrl, songUrl, bgColor, aColor, size }) => {
             <span className="bold">Download</span> (size: {size})
           </a>
         </div>
+        <div className="bg"></div>
       </div>
 
       <style jsx>{`
         .main {
+          position: relative;
           text-align: left;
           border: 1px solid white;
           border: 5px solid #01203f4b;
           border-radius: 0 0 20% 20%;
-          width: 350px;
+          width: 360px;
           padding-left: 20px;
           padding-right: 20px;
           margin: 15px;
-          background-color: ${bgColor};
+        }
+
+        .bg {
+          position: absolute;
+          padding: 0;
+          margin: 0;
+          height: 100%;
+          width: 100%;
+          top: 0;
+          left: 0;
+          right: 0;
+          background-color: black;
+          background-image: url(${imageUrl});
+          background-position: top;
+          background-repeat: repeat-x;
+          background-size: 320px;
+          filter: blur(5px);
+          overflow: hidden;
+          border-radius: 0 0 20% 20%;
+          z-index: 0;
         }
 
         .image {
@@ -34,29 +54,47 @@ const Song = ({ name, singers, imageUrl, songUrl, bgColor, aColor, size }) => {
         }
 
         img {
+          position: relative;
           display: inline-block;
           padding: 0;
           margin: 0;
+          border: 1px solid black;
+          border-radius: 5%;
+          z-index: 5;
         }
 
         h3 {
-          margin: 0;
+          position: relative;
+          z-index: 5;
         }
 
         p {
-          margin: 0;
+          position: relative;
+
           padding-bottom: 10px;
           font-size: 0.9rem;
+          z-index: 5;
+        }
+
+        h3,
+        p {
+          margin: 0;
+          padding-left: 4px;
         }
 
         audio {
+          position: relative;
+
           justify-content: center;
           position: relative;
-          z-index: 0;
+          z-index: 5;
         }
 
         .a {
+          position: relative;
+
           text-align: center;
+          z-index: 5;
         }
 
         a {
