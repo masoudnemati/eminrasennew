@@ -20,6 +20,7 @@ const NewSongsHome = () => {
           color: white;
           background-image: url("/images/new-songs-home/Wave-Line.svg");
           background-position: center;
+          background-color: #021c3a;
           text-align: center;
           padding-bottom: 50px;
         }
@@ -38,13 +39,38 @@ const NewSongsHome = () => {
           background-image: url("/images/new-songs-home/Sound Wave.svg");
           background-size: contain;
         }
+
+        @keyframes yourAnimation {
+          0.0% {
+          }
+          25% {
+            transform: translate(-50px);
+          }
+          50.0% {
+            transform: translate(50px);
+          }
+          75% {
+            transform: translate(-50px);
+          }
+        }
+
         .new-songs-home-a {
+          animation: yourAnimation 5s ease 0s infinite normal none;
+
           color: #0c1524;
           display: inline-block;
           padding: 12px;
-          background-color: rgba(210, 232, 237, 0.96);
-          border: 3px solid #420008;
+          padding-right: 33px;
+          background-color: rgba(210, 232, 237, 0.97);
+          background-image: url("/icons/icons8-musical-notes-24.png");
+          background-repeat: no-repeat;
+          background-position: 165px center;
           cursor: pointer;
+        }
+
+        .new-songs-home-a:hover {
+          color: white;
+          background-color: black;
         }
       `}</style>
     </>

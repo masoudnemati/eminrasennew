@@ -12,8 +12,6 @@ const SongList = () => {
       songUrl:
         "https://5fb7b43e5042ef0018e4bae7.iran.liara.space/eminrasen-songs/HEDEH%20.mp3",
       size: "12MB",
-
-      bgColor: "#000102",
       aColor: "#420008",
     },
     {
@@ -25,7 +23,6 @@ const SongList = () => {
       songUrl:
         "https://5fb7b43e5042ef0018e4bae7.iran.liara.space/eminrasen-songs/Yadadym.mp3",
       size: "9MB",
-      bgColor: "#242724",
       aColor: "#191B1C",
     },
     {
@@ -37,8 +34,6 @@ const SongList = () => {
       songUrl:
         "https://5fb7b43e5042ef0018e4bae7.iran.liara.space/eminrasen-songs/%5BGALMAGAL%5D%20-%20EMIN%26ALMA%20ft%20LA%20BLAZE.mp3",
       size: "13MB",
-
-      bgColor: "#000100",
       aColor: "#224E5B",
     },
   ]);
@@ -52,7 +47,6 @@ const SongList = () => {
             singers={song.singers}
             imageUrl={song.imageUrl}
             songUrl={song.songUrl}
-            bgColor={song.bgColor}
             aColor={song.aColor}
             size={song.size}
           />

@@ -1,4 +1,4 @@
-const Song = ({ name, singers, imageUrl, songUrl, bgColor, aColor, size }) => {
+const Song = ({ name, singers, imageUrl, songUrl, aColor, size }) => {
   return (
     <>
       <div className="main">
