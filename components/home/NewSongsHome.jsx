@@ -66,6 +66,7 @@ const NewSongsHome = () => {
           background-repeat: no-repeat;
           background-position: 165px center;
           cursor: pointer;
+          border-radius: 10px;
         }
 
         .new-songs-home-a:hover {
@@ -77,4 +78,4 @@ const NewSongsHome = () => {
   );
 };
 
-export { NewSongsHome };
+export default NewSongsHome;
