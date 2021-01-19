@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import NewSongList from "../NewSongList";
+import NewSongList from "./NewSongList";
 
 const NewSongsHome = () => {
   return (

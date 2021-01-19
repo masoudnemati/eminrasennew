@@ -1,8 +1,8 @@
 import React from "react";
 import Layout from "../components/layout/layout";
 
-const Songs = () => {
-  return <Layout>Songs</Layout>;
+const Videos = () => {
+  return <Layout>video</Layout>;
 };
 
-export default Songs;
+export default Videos;

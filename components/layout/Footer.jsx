@@ -33,7 +33,7 @@ const Footer = () => {
             </Link>
           </li>
           <li className="video-li">
-            <Link href="/video">
+            <Link href="/videos">
               <a>موزیک ویدئو</a>
             </Link>
           </li>
