@@ -33,7 +33,6 @@ yarn-error.log*
 # vercel
 .vercel
 
-# huge assets
-!public/songs
-!public/songs-images
-!public/videos
+# BIG FILES
+/public/songs
+/public/videos
