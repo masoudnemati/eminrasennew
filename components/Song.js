@@ -84,7 +84,6 @@ const Song = ({ name, singers, imageUrl, songUrl, aColor, size }) => {
 
         audio {
           position: relative;
-
           justify-content: center;
           position: relative;
           z-index: 5;

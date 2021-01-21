@@ -13,7 +13,7 @@ const SeeAllVideoes = () => {
           muted
           loop
         />
-        <Link href="/video">
+        <Link href="/videos">
           <p className="see-all-vid-p">مشاهده تمامی موزیک ویدئوها</p>
         </Link>
       </div>
@@ -21,7 +21,14 @@ const SeeAllVideoes = () => {
         .see-all-vid-main {
           position: relative;
           width: 100%;
+          max-width: 900px;
+          margin: 0 auto;
           text-align: center;
+        }
+
+        video {
+          border-radius: 10%;
+          padding-bottom: 50px;
         }
 
         .bg-video {
@@ -34,13 +41,14 @@ const SeeAllVideoes = () => {
           color: snow;
           position: absolute;
           background-color: rgba(0, 0, 0, 0.7);
+
           border: 1px solid white;
           border-radius: 10px;
           display: inline-block;
           padding: 15px;
-          top: 50%;
-          left: 15%;
-          right: 15%;
+          left: 20%;
+          right: 20%;
+          bottom: 3%;
           cursor: pointer;
         }
 
