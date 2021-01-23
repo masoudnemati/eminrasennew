@@ -1,13 +1,12 @@
 import React from "react";
-import Image from "next/image";
 
 const ContactUsComponent = () => {
   return (
     <main className="contactus-main">
       <address className="emin">
-        <Image
-          width={125}
-          height={125}
+        <img
+          width="125"
+          height="125"
           src="/images/contact-us/eminraseninstagram.jpg"
           alt="eminrasen"
           className="contactus-emin-img"
