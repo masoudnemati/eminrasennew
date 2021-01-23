@@ -1,9 +1,19 @@
-const Song = ({ name, singers, imageUrl, songUrl, aColor, size }) => {
+import Image from "next/image";
+
+const Song = ({ key, name, singers, imageUrl, songUrl, aColor, size }) => {
   return (
     <>
       <div className="main">
         <div className="image">
-          <img src={imageUrl} width="300" height="300" alt={name} />
+          <Image
+            key={key}
+            className="image-component"
+            alt={name}
+            src={imageUrl}
+            width={300}
+            height={300}
+            loading="eager"
+          />
         </div>
         <h3>{name}</h3>
         <p>{singers}</p>
@@ -51,16 +61,6 @@ const Song = ({ name, singers, imageUrl, songUrl, aColor, size }) => {
 
         .image {
           text-align: center;
-        }
-
-        img {
-          position: relative;
-          display: inline-block;
-          padding: 0;
-          margin: 0;
-          border: 1px solid black;
-          border-radius: 5%;
-          z-index: 5;
         }
 
         h3 {
@@ -117,6 +117,19 @@ const Song = ({ name, singers, imageUrl, songUrl, aColor, size }) => {
 
         .bold {
           font-weight: bold;
+        }
+      `}</style>
+
+      <style jsx global>{`
+        .image-component {
+          position: relative;
+          display: inline-block;
+          padding: 0;
+          margin: 0;
+          /* BORDER WITHOUT !IMPORTANT IS NOT WORKING AND I DON'T KNOW WHY!!!!!!!! D: */
+          border: 1px solid black !important;
+          border-radius: 5%;
+          z-index: 5;
         }
       `}</style>
     </>
