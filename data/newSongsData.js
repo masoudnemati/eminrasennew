@@ -1,6 +1,6 @@
 const newSongsData = [
   {
-    id: "1",
+    id: "1n",
     name: "Hedeh?",
     singers: ["Emin Rasen"],
     imageUrl: "/songs-images/hedeh.webp",
@@ -9,7 +9,7 @@ const newSongsData = [
     aColor: "#420008",
   },
   {
-    id: "2",
+    id: "2n",
     name: "YADADİM",
     singers: ["Emin Rasen, ", "DarKray, ", "Begmyrat_K"],
     imageUrl: "/songs-images/yadadim.webp",
@@ -18,11 +18,11 @@ const newSongsData = [
     aColor: "#191B1C",
   },
   {
-    id: "3",
+    id: "3n",
     name: "Galmagal",
     singers: ["Emin Rasen, ", "Alma"],
     imageUrl: "/songs-images/galmagal.webp",
-    songUrl: "/songs/[GALMAGAL] - EMIN&ALMA ft LA BLAZE.mp3",
+    songUrl: "/songs/GALMAGAL.mp3",
     size: "13MB",
     aColor: "#224E5B",
   },

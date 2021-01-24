@@ -3,12 +3,12 @@ const Video = ({ name, singers, videoUrl, posterUrl }) => {
     <>
       <section className="video-main">
         <video
-          type="video/mp4"
           width="100%"
           src={videoUrl}
           controls
           preload="none"
           poster={posterUrl}
+          type="video/mp4"
         >
           Your browser does not support the video tag.
         </video>

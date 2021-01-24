@@ -1,18 +1,16 @@
 import Image from "next/image";
 
-const Song = ({ key, name, singers, imageUrl, songUrl, aColor, size }) => {
+const Song = ({ name, singers, imageUrl, songUrl, aColor, size }) => {
   return (
     <>
       <div className="main">
         <div className="image">
           <Image
-            key={key}
             className="image-component"
             alt={name}
             src={imageUrl}
             width={300}
             height={300}
-            loading="eager"
           />
         </div>
         <h3>{name}</h3>

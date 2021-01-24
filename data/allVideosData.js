@@ -18,14 +18,14 @@ const allVideosData = [
     name: "Oghlum",
     singers: ["Emin Rasen"],
     posterUrl: "/videos-poster/oghlum-poster.webp",
-    videoUrl: "/videos/Emin Rasen - Oghlum [720].mp4",
+    videoUrl: "/videos/oghlum.mp4",
   },
   {
     id: "1",
     name: "Aglama",
     singers: ["Emin Rasen, ", "Alma"],
     posterUrl: "/videos-poster/aglama-poster.webp",
-    videoUrl: "/videos/Emin Rasen Ft Alma - Aglama [720].mp4",
+    videoUrl: "/videos/aglama.mp4",
   },
 ];
 

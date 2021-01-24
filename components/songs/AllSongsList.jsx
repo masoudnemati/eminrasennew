@@ -10,8 +10,8 @@ const SongsMain = () => {
       <div className="all-songs-list">
         {songs.map((song) => (
           <Song
-            name={song.name}
             key={song.id}
+            name={song.name}
             singers={song.singers}
             imageUrl={song.imageUrl}
             songUrl={song.songUrl}
