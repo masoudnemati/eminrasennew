@@ -27,7 +27,6 @@ const AboutUsComponent = () => {
       <style jsx>{`
         .aboutus-main {
           padding: 170px 100px 300px 100px;
-          text-align: right;
           direction: rtl;
           text-align: justify;
           font-size: 16px;
@@ -43,6 +42,7 @@ const AboutUsComponent = () => {
 
         .aboutus-main h1 {
           display: block;
+          font-style: normal;
           padding-top: 13px;
           margin: 0;
         }
@@ -55,6 +55,7 @@ const AboutUsComponent = () => {
 
         .aboutus-main p {
           padding-top: 10px;
+          font-style: normal;
         }
 
         .aboutus-emin {
