@@ -154,15 +154,7 @@ const allSongsData = [
     size: "10MB",
     aColor: "#042817",
   },
-  {
-    id: "8",
-    name: "Per",
-    singers: ["Emin Rasen"],
-    imageUrl: "/songs-images/per.webp",
-    songUrl: "/songs/Emin Rasen - PER.mp3",
-    size: "10MB",
-    aColor: "#162925",
-  },
+
   {
     id: "7",
     name: "Shahir",
