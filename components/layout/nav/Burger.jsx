@@ -13,23 +13,23 @@ const Burger = () => {
 
         <style jsx>{`
           .burger-main {
-            width: 2rem;
+            width: 2.4rem;
             height: 2rem;
             position: fixed;
-            top: 30px;
+            top: 18px;
             right: 20px;
             z-index: 20;
             display: none;
-            margin-right: 10px;
           }
 
           .burger {
-            width: 2rem;
-            height: 0.25rem;
+            width: 2.4rem;
+            height: 0.3rem;
             background-color: ${open ? "red" : "white"};
             border: 1px solid black;
             transform-origin: 1px;
             transition: all 0.3s linear;
+            border-radius: 5px;
           }
 
           .burger1 {
