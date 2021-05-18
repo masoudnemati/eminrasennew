@@ -26,6 +26,15 @@ const newSongsData = [
     size: "13MB",
     aColor: "#224E5B",
   },
+  {
+    id: "4n",
+    name: "Galmagal",
+    singers: ["Emin Rasen, ", "Alma"],
+    imageUrl: "/songs-images/galmagal.webp",
+    songUrl: "/songs/GALMAGAL.mp3",
+    size: "13MB",
+    aColor: "#224E5B",
+  },
 ];
 
 export default newSongsData;

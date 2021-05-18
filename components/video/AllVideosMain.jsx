@@ -12,9 +12,9 @@ const AllSongsMain = () => {
       <style jsx>{`
         .all-videos-main {
           color: white;
-          background-image: url("/images/new-songs-home/Wave-Line.svg");
-          background-position: center;
-          background-color: #021c3a;
+          /* background-image: url("/images/new-songs-home/Wave-Line.svg");
+          background-position: center; */
+          background-color: #0c1522;
           text-align: center;
           padding-top: 120px;
           padding-bottom: 50px;

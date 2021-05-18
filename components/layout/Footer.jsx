@@ -22,31 +22,31 @@ const Footer = () => {
       <div className="footer-center">
         <ul>
           <li className="links">لینک های کاربردی</li>
-          <li className="home-li">
-            <Link href="/">
+          <Link href="/">
+            <li className="home-li">
               <a>صفحه اصلی</a>
-            </Link>
-          </li>
-          <li className="songs-li">
-            <Link href="/songs">
+            </li>
+          </Link>
+          <Link href="/songs">
+            <li className="songs-li">
               <a>آهنگ</a>
-            </Link>
-          </li>
-          <li className="video-li">
-            <Link href="/videos">
+            </li>
+          </Link>
+          <Link href="/videos">
+            <li className="video-li">
               <a>موزیک ویدئو</a>
-            </Link>
-          </li>
-          <li className="about-us-li">
-            <Link href="/about-us">
+            </li>
+          </Link>
+          <Link href="/about-us">
+            <li className="about-us-li">
               <a>درباره ما</a>
-            </Link>
-          </li>
-          <li className="contact-us-li">
-            <Link href="/contact-us">
+            </li>
+          </Link>
+          <Link href="/contact-us">
+            <li className="contact-us-li">
               <a>تماس با ما</a>
-            </Link>
-          </li>
+            </li>
+          </Link>
         </ul>
       </div>
       <div className="footer-right">
@@ -142,6 +142,7 @@ const Footer = () => {
         li {
           padding: 6px 30px 6px 0;
           margin: 0;
+          cursor: pointer;
         }
         .links {
           padding-bottom: 10px;
