@@ -1,9 +1,17 @@
-import Image from "next/image";
+import { useState } from "react";
+import Player from "./Player";
 
 const Song = ({ name, singers, imageUrl, songUrl }) => {
+  const [player, setPlayer] = useState(false);
+
   return (
     <>
-      <div className="main">
+      <div
+        className="main"
+        onClick={() => {
+          setPlayer(!player);
+        }}
+      >
         <img
           className="image-component"
           alt={name}
@@ -16,6 +24,8 @@ const Song = ({ name, singers, imageUrl, songUrl }) => {
           <p>{singers}</p>
         </div>
       </div>
+
+      {player && <Player />}
 
       <style jsx>{`
         .main {
@@ -81,6 +91,7 @@ const Song = ({ name, singers, imageUrl, songUrl }) => {
 
         p {
           font-size: 0.9rem;
+          color: lightgray;
         }
 
         h3,
@@ -93,7 +104,7 @@ const Song = ({ name, singers, imageUrl, songUrl }) => {
         @media only screen and (max-width: 780px) {
           .main {
             border: none;
-            margin: 0.7rem;
+            margin: 0.5rem;
           }
         }
       `}</style>
