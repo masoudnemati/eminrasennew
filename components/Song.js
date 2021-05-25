@@ -1,10 +1,6 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
 
-const Song = ({ name, singers, imageUrl, songUrl }) => {
-  const router = useRouter();
-  console.log(router.query);
-
+const Song = ({ name, singers, imageUrl, songUrl, size }) => {
   return (
     <>
       <Link
@@ -15,6 +11,7 @@ const Song = ({ name, singers, imageUrl, songUrl }) => {
             singers: singers,
             imageUrl: imageUrl,
             songUrl: songUrl,
+            size: size,
           },
         }}
       >

@@ -15,7 +15,7 @@ const SongsMain = () => {
             singers={song.singers}
             imageUrl={song.imageUrl}
             songUrl={song.songUrl}
-            aColor={song.aColor}
+            // aColor={song.aColor}
             size={song.size}
           />
         ))}

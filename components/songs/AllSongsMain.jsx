@@ -16,7 +16,7 @@ const AllSongsMain = () => {
           background-position: center;
           background-color: #0c1522; */
           text-align: center;
-          padding-top: 150px;
+          padding-top: 100px;
           padding-bottom: 50px;
         }
 
