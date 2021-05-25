@@ -41,13 +41,12 @@ const SeeAllVideoes = () => {
           color: snow;
           position: absolute;
           background-color: rgba(0, 0, 0, 0.7);
-
           border: 1px solid white;
           border-radius: 10px;
           display: inline-block;
           padding: 15px;
-          left: 20%;
-          right: 20%;
+          left: 17vw;
+          right: 17vw;
           bottom: 3%;
           cursor: pointer;
         }

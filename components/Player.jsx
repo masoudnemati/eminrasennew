@@ -1,32 +1,39 @@
+import Link from "next/link";
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 const Player = () => {
-  const [showPlayer, setShowPlayer] = useState(true);
-
+  const router = useRouter();
+  console.log(router.query);
   return (
     <>
-      <div className={`${showPlayer ? "main" : "hide"}`}>
+      <div className="main">
         <section className="player-top">
-          <img
-            className="back-icon"
-            width="50"
-            src="/icons/music-player/icons8-left-24.png"
-            alt="back"
-            onClick={() => {
-              setShowPlayer(!showPlayer);
-            }}
-          />
+          <Link href="songs">
+            <img
+              className="back-icon"
+              width="50"
+              height="50"
+              src="/icons/music-player/icons8-left-24.png"
+              alt="back"
+            />
+          </Link>
           <div className="names">
-            <h3>Music Name</h3>
-            <p>singers names</p>
+            <h3>{router.query.name}</h3>
+            <p>{router.query.singers}</p>
           </div>
         </section>
         <img
           className="song-image"
-          width="350"
-          src="/songs-images/alma.webp"
+          width="300"
+          height="300"
+          src={router.query.imageUrl}
           alt="song"
         />
+        <audio src={router.query.songUrl} controls preload="none" />
+        <a href={router.query.songUrl} download={router.query.name}>
+          Download MP3
+        </a>
       </div>
 
       <style jsx>{`
@@ -37,31 +44,28 @@ const Player = () => {
           bottom: 0;
           right: 0;
           left: 0;
-          background-color: black;
-          line-height: 1.2rem;
+          background-color: #1c1c1c;
+          line-height: 1.3rem;
           display: flex;
           flex-direction: column;
           justify-content: flex-start;
           align-items: center;
         }
 
-        .hide {
-          display: none;
-        }
-
         .player-top {
+          width: 300px;
+          height: 75px;
           display: flex;
           flex-direction: row;
           flex-wrap: nowrap;
           justify-content: flex-start;
           padding-top: 1rem;
-          margin-left: -190px;
+          margin-left: -0;
         }
 
         .back-icon {
           cursor: pointer;
           margin: 0.5rem;
-          padding: 0.1rem;
         }
 
         .back-icon:hover {
@@ -80,6 +84,10 @@ const Player = () => {
         p {
           padding: 0;
           margin: 0;
+        }
+
+        h3 {
+          color: white;
         }
 
         p {

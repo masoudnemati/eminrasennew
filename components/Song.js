@@ -1,31 +1,37 @@
-import { useState } from "react";
-import Player from "./Player";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Song = ({ name, singers, imageUrl, songUrl }) => {
-  const [player, setPlayer] = useState(false);
+  const router = useRouter();
+  console.log(router.query);
 
   return (
     <>
-      <div
-        className="main"
-        onClick={() => {
-          setPlayer(!player);
+      <Link
+        href={{
+          pathname: "/player",
+          query: {
+            name: name,
+            singers: singers,
+            imageUrl: imageUrl,
+            songUrl: songUrl,
+          },
         }}
       >
-        <img
-          className="image-component"
-          alt={name}
-          src={imageUrl}
-          width="85"
-          height="85"
-        />
-        <div className="names">
-          <h3>{name}</h3>
-          <p>{singers}</p>
+        <div className="main">
+          <img
+            className="image-component"
+            alt={name}
+            src={imageUrl}
+            width="85"
+            height="85"
+          />
+          <div className="names">
+            <h3>{name}</h3>
+            <p>{singers}</p>
+          </div>
         </div>
-      </div>
-
-      {player && <Player />}
+      </Link>
 
       <style jsx>{`
         .main {
