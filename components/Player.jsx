@@ -31,8 +31,9 @@ const Player = () => {
         />
         <audio src={router.query.songUrl} controls preload="none" />
         <a href={router.query.songUrl} download={router.query.name}>
-          Download MP3 size: {router.query.size}
+          DOWNLOAD MP3
         </a>
+        <span className="size">size: {router.query.size}</span>
       </div>
 
       <style jsx>{`
@@ -93,13 +94,58 @@ const Player = () => {
           color: gray;
         }
 
+        audio {
+          margin: 1rem 0 2rem 0;
+        }
+
         a {
-          background-color: lightskyblue;
-          border: 3px solid white;
+          display: inline-block;
+          position: relative;
+          font-weight: bolder;
+          font-size: large;
+          letter-spacing: 0.15rem;
+          background-color: #000000;
+          color: white;
+          border: 1px solid white;
+          /* background-image: url(/icons/icons8-download-26.png);
+          background-repeat: no-repeat;
+          background-position: 17px center;
+          background-size: 20px; */
           border-radius: 10px;
           width: 300px;
-          padding: 10px 0;
+          padding: 15px 0;
           text-align: center;
+          font-family: "Audiowide", cursive;
+          transition: all 0.3s ease;
+          overflow: hidden;
+        }
+
+        a::after {
+          position: absolute;
+          content: " ";
+          z-index: -1;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+          transition: all 0.3s ease;
+        }
+
+        a:hover {
+          background: transparent;
+        }
+
+        a:hover::after {
+          transform: scale(2) rotate(180deg);
+        }
+
+        .size {
+          color: lightgray;
+          font-weight: lighter;
+          font-size: small;
+          letter-spacing: 0.1rem;
+          margin-top: 0.2rem;
         }
       `}</style>
     </>

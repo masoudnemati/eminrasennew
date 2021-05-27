@@ -1,12 +1,27 @@
 const allSongsData = [
   {
+    id: "27",
+    name: "Allah ",
+    singers: ["Emin Rasen, ", "Mohammad Amin"],
+    imageUrl: "/songs-images/allah.webp",
+    songUrl: "/songs/((EminRasen & Mohammad Amin_Allah)).mp3",
+    size: "9MB",
+  },
+  {
+    id: "26",
+    name: "Tiraxtor ",
+    singers: ["Emin Rasen"],
+    imageUrl: "/songs-images/tiraxtor.webp",
+    songUrl: "/songs/Tiraxtor .mp3",
+    size: "6MB",
+  },
+  {
     id: "25",
     name: "Hedeh?",
     singers: ["Emin Rasen"],
     imageUrl: "/songs-images/hedeh.webp",
     songUrl: "/songs/HEDEH .mp3",
     size: "12MB",
-    aColor: "#420008",
   },
   {
     id: "24",
@@ -15,7 +30,6 @@ const allSongsData = [
     imageUrl: "/songs-images/yadadim.webp",
     songUrl: "/songs/Yadadym.mp3",
     size: "9MB",
-    aColor: "#191B1C",
   },
   {
     id: "23",
@@ -24,7 +38,6 @@ const allSongsData = [
     imageUrl: "/songs-images/galmagal.webp",
     songUrl: "/songs/GALMAGAL.mp3",
     size: "13MB",
-    aColor: "#224E5B",
   },
 
   //old to new
@@ -35,16 +48,14 @@ const allSongsData = [
     imageUrl: "/songs-images/turkmen-ses.webp",
     songUrl: "/songs/Turkmen Ses.mp3",
     size: "12MB",
-    aColor: "#153130",
   },
   {
     id: "21",
     name: "Dali Party",
     singers: ["Emin Rasen, ", " Shoxruz(Abadiya), ", "Fariza"],
     imageUrl: "/songs-images/dali-party.webp",
-    songUrl: "/songs/Shoxruz_Abadiya_ - Party_ft Emin Rasen _ Fariza_.mp3",
+    songUrl: "/songs/Shoxruz(Abadiya) - Party(ft Emin Rasen & Fariza).mp3",
     size: "7MB",
-    aColor: "#012F2B",
   },
   {
     id: "20",
@@ -53,16 +64,14 @@ const allSongsData = [
     imageUrl: "/songs-images/unut.webp",
     songUrl: "/songs/Unut.mp3",
     size: "7MB",
-    aColor: "#011C47",
   },
   {
     id: "19",
     name: "Basla",
     singers: ["Emin Rasen"],
     imageUrl: "/songs-images/basla.webp",
-    songUrl: "/songs/Emin - Bashla(1).mp3",
+    songUrl: "/songs/Emin - Bashla.mp3",
     size: "10MB",
-    aColor: "#6B463E",
   },
   {
     id: "18",
@@ -71,7 +80,6 @@ const allSongsData = [
     imageUrl: "/songs-images/aglama.webp",
     songUrl: "/songs/Emin Rasen &  Alma  (AĞLAMA).mp3",
     size: "14MB",
-    aColor: "#173E3F",
   },
   {
     id: "17",
@@ -80,7 +88,6 @@ const allSongsData = [
     imageUrl: "/songs-images/Ilim.webp",
     songUrl: "/songs/Ilim - Emin Rasen ft Alma.mp3",
     size: "7MB",
-    aColor: "#06555B",
   },
   {
     id: "16",
@@ -89,7 +96,6 @@ const allSongsData = [
     imageUrl: "/songs-images/alma.webp",
     songUrl: "/songs/Alma - Emin.mp3",
     size: "8MB",
-    aColor: "#797572",
   },
   {
     id: "15",
@@ -98,7 +104,6 @@ const allSongsData = [
     imageUrl: "/songs-images/rep-bebek.webp",
     songUrl: "/songs/Rep Bebek - Emin.mp3",
     size: "8MB",
-    aColor: "#585EBA",
   },
   {
     id: "14",
@@ -107,16 +112,14 @@ const allSongsData = [
     imageUrl: "/songs-images/bilgiler.webp",
     songUrl: "/songs/Emin - Bilgiler.mp3",
     size: "6MB",
-    aColor: "#9B251D",
   },
   {
     id: "13",
     name: "Enem",
     singers: ["Emin Rasen, ", "Alma"],
     imageUrl: "/songs-images/enem.webp",
-    songUrl: "/songs/(Enem_Emin Rasen_Alma) (0).mp3",
+    songUrl: "/songs/(Enem_Emin Rasen_Alma).mp3",
     size: "11MB",
-    aColor: "#55303F",
   },
   {
     id: "12",
@@ -125,7 +128,6 @@ const allSongsData = [
     imageUrl: "/songs-images/tangri.webp",
     songUrl: "/songs/Emin - Tangri.mp3",
     size: "8MB",
-    aColor: "#1A242A",
   },
   {
     id: "11",
@@ -134,7 +136,6 @@ const allSongsData = [
     imageUrl: "/songs-images/bildim.webp",
     songUrl: "/songs/Bildim.mp3",
     size: "9MB",
-    aColor: "#2C312F",
   },
   {
     id: "10",
@@ -143,7 +144,6 @@ const allSongsData = [
     imageUrl: "/songs-images/over-flow.webp",
     songUrl: "/songs/Emin - Over flow.mp3",
     size: "9MB",
-    aColor: "#115311",
   },
   {
     id: "9",
@@ -152,7 +152,6 @@ const allSongsData = [
     imageUrl: "/songs-images/oghlum.webp",
     songUrl: "/songs/Emin-oghlum.mp3",
     size: "10MB",
-    aColor: "#042817",
   },
 
   {
@@ -162,18 +161,16 @@ const allSongsData = [
     imageUrl: "/songs-images/shahir.webp",
     songUrl: "/songs/S H A H I R ( T_Yash FT DALI TOPOR ).mp3",
     size: "10MB",
-    aColor: "#890701",
   },
-  {
-    id: "6",
-    name: "Zan",
-    singers: ["Emin Rasen"],
-    imageUrl: "/songs-images/zan.webp",
-    songUrl:
-      "/songs/Emin Rasen - Zan (Women) Product By Un.record,s Finall .mp3",
-    size: "4MB",
-    aColor: "#001067",
-  },
+  // {
+  //   id: "6",
+  //   name: "Zan",
+  //   singers: ["Emin Rasen"],
+  //   imageUrl: "/songs-images/zan.webp",
+  //   songUrl:
+  //     "/songs/Emin Rasen - Zan (Women) Product By Un.record,s Finall .mp3",
+  //   size: "4MB",
+  // },
   {
     id: "5",
     name: "Rap",
@@ -181,7 +178,6 @@ const allSongsData = [
     imageUrl: "/songs-images/rap.webp",
     songUrl: "/songs/EMIN RASEN - RAP.mp3",
     size: "11MB",
-    aColor: "#83014E",
   },
   {
     id: "4",
@@ -190,7 +186,6 @@ const allSongsData = [
     imageUrl: "/songs-images/turkmenim.webp",
     songUrl: "/songs/Amin Rasen - Turkmenim Finall_-482694322.mp3",
     size: "7MB",
-    aColor: "#2E332D",
   },
   {
     id: "3",
@@ -199,7 +194,6 @@ const allSongsData = [
     imageUrl: "/songs-images/gercheck.webp",
     songUrl: "/songs/Amin Rasen - Gercheck ((Product By Un.Record,s)).mp3",
     size: "10MB",
-    aColor: "#0F1553",
   },
   {
     id: "2",
@@ -208,7 +202,6 @@ const allSongsData = [
     imageUrl: "/songs-images/daliy.webp",
     songUrl: "/songs/Daliy - Amin Rasen.mp3",
     size: "9MB",
-    aColor: "#270126",
   },
   {
     id: "1",
@@ -217,7 +210,6 @@ const allSongsData = [
     imageUrl: "/songs-images/ball-dowran.webp",
     songUrl: "/songs/Amin Rasen - Ball Dowran (Product By Un.Record,s )-1.mp3",
     size: "10MB",
-    aColor: "#6B3404",
   },
 ];
 
