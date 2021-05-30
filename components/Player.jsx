@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { useState } from "react";
 import { useRouter } from "next/router";
+import Back from "./SVG/Back";
 
 const Player = () => {
   const router = useRouter();
@@ -9,13 +9,9 @@ const Player = () => {
       <div className="main">
         <section className="player-top">
           <Link href="songs">
-            <img
-              className="back-icon"
-              width="50"
-              height="50"
-              src="/icons/music-player/icons8-left-24.png"
-              alt="back"
-            />
+            <div>
+              <Back />
+            </div>
           </Link>
           <div className="names">
             <h3>{router.query.name}</h3>
@@ -60,15 +56,6 @@ const Player = () => {
           flex-wrap: nowrap;
           justify-content: flex-start;
           padding-top: 1rem;
-        }
-
-        .back-icon {
-          cursor: pointer;
-          margin: 0.5rem;
-        }
-
-        .back-icon:hover {
-          background-color: red;
         }
 
         .names {
