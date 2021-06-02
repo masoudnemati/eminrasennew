@@ -1,5 +1,12 @@
 const allVideosData = [
   {
+    id: "5",
+    name: "Tiraxtur",
+    singers: ["Emin Rasen"],
+    posterUrl: "/videos-poster/tractor-poster.webp",
+    videoUrl: "/videos/tiraxtur.mp4",
+  },
+  {
     id: "4",
     name: "Hedeh?",
     singers: ["Emin Rasen"],
@@ -11,7 +18,7 @@ const allVideosData = [
     name: "Galmagal",
     singers: ["Emin Rasen, ", " Alma"],
     posterUrl: "/videos-poster/galmagal-poster.webp",
-    videoUrl: "/videos/Emin Rasen Ft Alma - Galmagal.mp4",
+    videoUrl: "/videos/galmagal.mp4",
   },
   {
     id: "2",

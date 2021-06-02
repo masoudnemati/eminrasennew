@@ -45,11 +45,11 @@ const ContactUsComponent = () => {
         <hr />
         <a
           className="insta"
-          href="https://www.instagram.com/masoudnemati1994/"
+          href="https://www.instagram.com/atyal.ir"
           target="_blank"
           rel="noopener noreferrer"
         >
-          masoudnemati1994
+          atyal.ir
         </a>
         <a
           className="tel"
