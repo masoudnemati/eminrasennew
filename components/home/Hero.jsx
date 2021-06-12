@@ -2,9 +2,9 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <main>
+    <div className="main">
       <div className="hero">
-        <div className="headers">
+        <main className="headers">
           <h1 className="hero-header">EMIN RASEN</h1>
           <h4 className="hero-des">TURKMEN RAP İÑ DALISI</h4>
           <section className="social-icons">
@@ -37,7 +37,7 @@ const Hero = () => {
               </a>
             </div>
           </section>
-        </div>
+        </main>
       </div>
 
       <style jsx>{`
@@ -87,14 +87,14 @@ const Hero = () => {
           padding: 15px;
           margin: 0 10px;
           border-radius: 40%;
-          transition: all 0.2s ease;
+          border: 1px double #8fbfcf;
         }
 
         img:hover {
           box-shadow: 0 3px 3px #8fbfcf;
         }
       `}</style>
-    </main>
+    </div>
   );
 };
 
